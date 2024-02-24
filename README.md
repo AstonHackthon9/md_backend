@@ -6,18 +6,18 @@ Schedule meeting format =
     "users": [
       {
         "userId": "",  //keep it empty
-        "firstName": "jack",
-        "lastName": "bill",
-        "role": "Interview",
-        "phoneNumber": "07867235170",
+        "firstName": "String",
+        "lastName": "String",
+        "role": "String" (Dropdown Interview / interviewee),
+        "phoneNumber": "string ",
         "room": null   //keep it null
       }
     ],
     "metaData": {
       "meta_id": "",   //keep it empty
-      "jobRole": "Senior Software Engineer",
-      "jobDesc": "loreum",
-      "pdf": byte[[
+      "jobRole": "string",
+      "jobDesc": "string",
+      "pdf": byte[] // CV
     },
     "scheduledTime": ""   //give date and time format
   
