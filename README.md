@@ -24,4 +24,4 @@ Schedule meeting format =
 }
 
 
-webrtc reference = https://blog.theodo.com/2021/01/webRTC-websockets-video-call-app/
+webrtc reference = https://www.baeldung.com/webrtc
