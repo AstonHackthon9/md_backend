@@ -6,9 +6,6 @@ import org.springframework.web.socket.WebSocketHandler;
 import org.springframework.web.socket.config.annotation.EnableWebSocket;
 import org.springframework.web.socket.config.annotation.WebSocketConfigurer;
 import org.springframework.web.socket.config.annotation.WebSocketHandlerRegistry;
-import org.springframework.web.socket.handler.PerConnectionWebSocketHandler;
-
-import java.io.IOException;
 
 
 @Configuration
@@ -22,7 +19,7 @@ public class WebSocketConfiguration implements WebSocketConfigurer  {
     @Override
     public void registerWebSocketHandlers(WebSocketHandlerRegistry registry) {
 
-        registry.addHandler(socketHandler, "/socket")
+        registry.addHandler(socketHandler, "/socket/{roomId}/{userID}")
                     .setAllowedOrigins("*");
 
     }

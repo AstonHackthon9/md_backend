@@ -51,7 +51,7 @@ public class RoomDao {
         try {
             MetaData metaData = new MetaData();
             metaData.setJobRole(room.getMetaData().getJobRole());
-            metaData.setJobDesc(room.getMetaData().getJobDesc());
+            metaData.setJobDesc(room.getMetaData().getJobDesc().substring(0,255));
             metaData.setPdf(room.getMetaData().getPdf() == null ? null: room.getMetaData().getPdf() );
             metaDataRepo.save(metaData);
 

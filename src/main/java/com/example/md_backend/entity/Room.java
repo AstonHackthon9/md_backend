@@ -20,7 +20,7 @@ public class Room {
     @GeneratedValue(strategy = GenerationType.UUID)
     private UUID roomID;
 
-    @OneToMany(cascade = CascadeType.ALL)
+    @OneToMany(cascade = CascadeType.ALL,fetch = FetchType.EAGER)
     private List<User> users;
 
     @OneToOne
